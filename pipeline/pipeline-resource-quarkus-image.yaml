@@ -1,0 +1,9 @@
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineResource
+metadata:
+  name: quarkus-image
+spec:
+  type: image
+  params:
+    - name: url
+      value: quay.io/seu-usuario/quarkus-native:latest
